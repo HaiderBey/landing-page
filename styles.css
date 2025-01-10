@@ -1,9 +1,11 @@
 body {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-family: Roboto;
+    font-size: 18px;
+    margin: 0;
 }
 
 header {
@@ -33,7 +35,7 @@ header img {
     height: 45px;
 }
 
-header, #sec-one {
+header, #sec-info {
     background-color: #1F2937;
     color: #E5E7EB;
     font-size: 18px;
@@ -45,7 +47,7 @@ header h1 {
     font-size: bold;
 }
 
-#sec-one h1 {
+#sec-info h1 {
     font-size: 48px;
     font-weight: 900;
 }
@@ -57,18 +59,18 @@ header h1 {
     justify-content: stretch;
 }
 
-#sec-one {
+#sec-info {
     padding: 50px 100px;
     display: flex;
     justify-content: center;
     gap: 13px;
 }
 
-#sec-one .text, #sec-one img {
+#sec-info .text, #sec-info img {
     flex: 1;
 }
 
-#sec-one img {
+#sec-info img {
     width: 500px;
     height: 250px; 
     /* object-fit: contain;  */
@@ -82,4 +84,48 @@ button {
     background-color: #3882f6;
     border: none;
     border-radius: 6px;
+}
+
+#sec-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#sec-members h2 {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+#sec-members .container .image{
+    border: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #3882f6;
+    /* padding: 50px; */
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+#sec-members .container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+#sec-members .container p {
+    font-weight: bold;
+}
+
+#sec-members .container span {
+    font-weight: 300;
+}
+
+#sec-members .container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
