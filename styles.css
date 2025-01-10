@@ -35,7 +35,7 @@ header img {
     height: 45px;
 }
 
-header, #sec-info {
+header, footer, #sec-info {
     background-color: #1F2937;
     color: #E5E7EB;
 }
@@ -80,8 +80,10 @@ button {
     padding: 4px 30px;
     color: white;
     background-color: #3882f6;
-    border: none;
-    border-radius: 6px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 #sec-members {
@@ -150,4 +152,41 @@ li {
     list-style: none;
     margin-bottom: 16px;
     font-size: 20px;
+}
+
+#join-us {
+    margin: 100px 160px;
+    background-color: #3882f6;
+    border-radius: 8px;
+    display: flex;
+}
+
+#join-us .content-left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    padding: 24px 24px 24px 124px;
+    color: #f9faf8;
+}
+
+#join-us .content-right {
+    display: flex;
+    flex-grow: 1;
+}
+
+#join-us  button{
+    align-self: center;
+    border: solid #f9faf8;
+    border-width: 2px;
+    width: 120px;
+    height: 34px;
+}
+
+.content-left h2 {
+    margin-bottom: -12px;
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
 }
