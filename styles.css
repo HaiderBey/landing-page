@@ -38,7 +38,6 @@ header img {
 header, #sec-info {
     background-color: #1F2937;
     color: #E5E7EB;
-    font-size: 18px;
 }
 
 header h1 {
@@ -53,7 +52,6 @@ header h1 {
 }
 
 .container {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -90,10 +88,12 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    padding-bottom: 80px;
+    padding-top: 20px;
 }
 
 #sec-members h2 {
-    font-size: 36px;
+    font-size: 45px;
     color: #1f2937;
     font-weight: 900;
 }
@@ -128,4 +128,26 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#about-us {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    background-color: #E5E7EB;
+    color: #1f2937;
+    padding-bottom: 80px;
+    padding-top: 20px;
+}
+
+#about-us p {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 16px;
+    font-size: 20px;
 }
