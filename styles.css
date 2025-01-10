@@ -3,11 +3,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: Roboto;
 }
 
 header {
-    background-color: #1F2937;
-    padding: 0 50px;
+    padding: 0 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,20 +18,68 @@ header {
     gap: 16px;
 }
 
-a {
+header .content {
+    display: flex;
+    align-items: center;
+}
+
+header, a {
     text-decoration: none;
     color: #E5E7EB;
 }
 
-#headerLogo {
+header img {
+    width: 45px;
+    height: 45px;
+}
+
+header, #sec-one {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+header h1 {
     font-size: 24px;
     color: #F9FAF8;
     font-size: bold;
+}
+
+#sec-one h1 {
+    font-size: 48px;
+    font-weight: 900;
 }
 
 .container {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: stretch;
+}
+
+#sec-one {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+
+#sec-one .text, #sec-one img {
+    flex: 1;
+}
+
+#sec-one img {
+    width: 500px;
+    height: 250px; 
+    /* object-fit: contain;  */
+    object-fit: cover;
+    object-position: 10% 12%;
+}
+
+button {
+    padding: 4px 30px;
+    color: white;
+    background-color: #3882f6;
+    border: none;
+    border-radius: 6px;
 }
